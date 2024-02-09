@@ -9,6 +9,11 @@ const routes = [
     name: 'home',
     component: () => import('../views/HomeView.vue')
   },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import(/* webpackChunkName: "about" */ '../views/profileView.vue')
+  },
 ]
 
 const router = new VueRouter({
